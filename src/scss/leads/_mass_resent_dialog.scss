@@ -1,0 +1,61 @@
+@import '../colorVar';
+@import 'src/scss/rules/_add_country_setting.scss';
+
+.mass_resent {
+  .input_container {
+    .text_gray{
+      overflow: hidden;
+      color: $gray_4;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      span{
+        margin-left: 4px;
+      }
+    }
+    .check_one{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex: none;
+      .tag_area{
+        min-height: 24px;
+      }
+    }
+    
+  }
+  .drop_menu_box {
+    .title_select {
+      span{
+        font-size: 16px;
+      }
+    }
+  }
+  .check_box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 18px;
+    width: 18px;
+    border: 1px solid $gray_4;
+    border-radius: 3px;
+    margin-right: 15px;
+    .v-icon{
+      color: $yellow;
+    }
+  }
+  .input_container + .delay_container{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .delay_box{
+      width: 46%;
+    }
+  }
+  .btn_save{
+    width: auto;
+    padding: 0 8px;
+    white-space: nowrap;
+  }
+}

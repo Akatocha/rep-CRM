@@ -1,0 +1,50 @@
+@import 'src/scss/rules/_add_country_setting.scss';
+.dialog_box{
+  margin-top: 15px;
+  // max-height: 791px;
+}
+.input_dis{
+  .v-icon{
+    color: $gray_4 !important;
+  }
+}
+.input_dis_text{
+  align-self: center;
+  margin-left: 8px;
+  color: $gray_4;
+}
+.time_range_box{
+  width: 100%;
+  min-height: 30px;
+  margin-top: 20px;
+  color: $gray_1;
+  padding: 0 110px;
+}
+.time_cell{
+margin-bottom: 8px;
+}
+.name_day{
+display: flex;
+justify-content: center;
+margin-bottom: 16px;
+}
+.input_time_row{
+display: flex;
+justify-content: space-between;
+}
+.hours_input{
+color: $gray_1;
+font-size: 14px;
+line-height: 16px;
+width: 70px;
+padding-bottom: 3px;
+border-bottom: 1px solid $gray_4;
+text-align: center;
+&:focus{
+  border-bottom: 1px solid $yellow;
+}
+}
+
+input[type="time"]::-webkit-calendar-picker-indicator {
+  display: none;
+}

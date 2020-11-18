@@ -1,0 +1,290 @@
+
+@import 'colorVar';
+
+.logo_text{
+  color: $gray_1;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 42px;
+}
+.btn-text{
+  font-size: 20px;
+  line-height: 23px;
+  text-transform: uppercase;
+}
+.input_box{
+  position: relative;
+  transition: 1s;
+  margin-bottom: 25px;
+  width: 330px;
+  box-shadow: -2px 4px 10px rgba(0, 0, 0, 0.05), 2px 4px 10px rgba(0, 0, 0, 0.05);
+  padding: 18px 15px 10px;
+  font-size: 20px;
+  line-height: 23px;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  .alert_inp_box{
+    position: absolute;
+    width: 100%;
+    bottom: 84%;
+  }
+  *:focus{
+    outline: none;
+  }
+  input{
+    transition: all 0.3s;
+    color: $gray_1;
+    width: 100%;
+    padding-bottom: 4px;
+    border-bottom: 1px solid $yellow;
+  }
+  .v-icon{
+    padding-bottom: 4px;
+    border-bottom: 1px solid $yellow;
+  }
+  .input_invalid{
+    border-bottom: 1px solid red;
+  }
+}
+
+.alert_box{
+  top: 60px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  .alert{
+    padding: 0 22px;
+    background: $dark;
+    display: flex;
+    align-items: center;
+    height: 48px;
+    opacity: 0.8;
+    box-shadow: 0px 4px 7px rgba(68, 68, 68, 0.25);
+    border-radius: 10px;
+  }
+  .v-icon{
+    margin-right: 13px;
+    // color: $green;
+  }
+  .alert_text{
+    color: white;
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+.main_box{
+  background: white;
+  width: 1000px;
+  margin: auto;
+  // margin-top: 240px;
+  margin-top: 200px;
+  box-shadow: 0px 4px 15px rgba(86, 86, 86, 0.25);
+  display: flex;
+  position: relative;
+  .login_box{
+    background: white;
+    z-index: 5;
+    padding: 75px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 607px;
+
+    .login_logo_box{
+      margin-bottom: 50px;
+    }
+    .second_text{
+      padding-top: 5px;
+      font-size: 16px;
+      line-height: 19px;
+      color: $gray_3;
+      margin-bottom: 47px;
+      &:hover{
+        color: $yellow;
+        cursor: pointer;
+      }
+    }
+    .btn_logo{
+      width: 138px;
+      background: $yellow;
+      padding: 9px 34px 8px;
+      border-radius: 5px;
+      &:focus{
+        outline: none;
+      }
+    }
+  }
+  .quest_box{
+    z-index: 10;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: 1s;
+    background: #101010;
+    width: 393px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 75px 0 171px;
+    *:focus{
+    outline: none;
+  }
+    .logo{
+      display: flex;
+      align-items: center;
+      margin-bottom: 50px;
+      .img-box{
+      margin-right: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 43px;
+      width: 43px;
+      border: solid 1px #FBC558;
+      border-radius: 5px;
+      img{
+        width: 32px;
+      }
+    }
+      .q_logo_text{
+        display: flex;
+        flex-direction: column;
+        .t_1{
+          font-size: 16px;
+          line-height: 19px;
+          color: $gray_4;
+        }
+        .t_2{
+          font-size: 18px;
+          line-height: 21px;
+          color: white;
+        }
+      }
+    }
+    .quest_logo_text{
+      color: white;
+      margin-bottom: 25px;
+    }
+    .second_quest_text{
+      font-size: 12px;
+      line-height: 14px;
+      text-align: center;
+      color: white;
+      width: 197px;
+      margin-bottom: 40px;
+    }
+    .btn_quest_box{
+      background: linear-gradient(to right, #FFE485,#FFC248,#EA971B);
+      padding: 1px;
+      border-radius: 5px;
+
+      .btn_quest{
+        display: flex;
+        width: 106px;
+        height: 38px;
+        justify-content: center;
+        align-items: center;
+        background: #101010;
+        color:#F6F8F9;
+        border-radius: 5px;
+        &:hover{
+          background: $yellow;
+          color: black;
+        }
+        span{
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+  .register_box{
+    height: 100%;
+    background: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 75px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 607px;
+    .register_name_box{
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      width: 330px;
+      & .input_box{
+        transition: all 0.3s;
+        box-shadow: none;
+        width: 165px;
+        margin-bottom: 0px;
+      }
+      & div:nth-child(1) {
+        background: white;
+        box-shadow: -2px 4px 10px rgba(0, 0, 0, 0.05), -2px 4px 10px rgba(0, 0, 0, 0.05);
+        input{
+          width: 135px;
+        }
+      }
+      & div:nth-child(2) {
+        box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.05), 2px 4px 10px rgba(0, 0, 0, 0.05);
+        width: 165px;
+      }
+      .intut_z_index1{
+        z-index: 2;
+        box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.05), -2px 4px 10px rgba(0, 0, 0, 0.05) !important;
+        background: white;
+      }
+      .intut_z_index2{
+        z-index: 2;
+        box-shadow: none;
+        box-shadow: -2px 4px 10px rgba(0, 0, 0, 0.05), 2px 4px 10px rgba(0, 0, 0, 0.05) !important;
+        background: white;
+      }
+      
+    }
+    .logo_register{
+      margin-bottom: 30px;
+    }
+    .btn_register{
+      background: $yellow;
+      padding: 9px 34px 8px;
+      border-radius: 5px;
+      &:focus{
+        outline: none;
+      }
+    }
+    .inp_reg_pass_box{
+      margin-bottom: 33px;
+    }
+  }
+}
+
+
+.login_email_box{
+  transform: translateY(50px);
+  z-index: 1;
+}
+
+.login_password_box{
+  transform: translateY(-24px);
+  z-index: -1;
+  opacity: 0;
+  .v-icon{
+    cursor: default;
+  }
+  input{
+  cursor: default;
+  }
+}
+
+
+
+

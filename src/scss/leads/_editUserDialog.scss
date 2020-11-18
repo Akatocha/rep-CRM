@@ -1,0 +1,66 @@
+@import '../_colorVar.scss';
+.main_container {
+  z-index: 100;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background: #1010106e;
+  width: 100%;
+  height: 100%;
+}
+.dialog_box{
+  margin: auto;
+  margin-top: 105px;
+  width: 1024px;
+  background: white;
+  box-shadow: 0px 4px 20px rgba(68, 68, 68, 0.5);
+  border-radius: 7px;
+  overflow: hidden;
+}
+.dialog_header{
+  width: 100%;
+  height: 63px;
+  display: flex;
+  align-items: center;
+  background: $yellow_light;
+  padding: 0 25px;
+  font-size: 20px;
+  line-height: 23px;
+  color: $yellow;
+  .v-icon{
+    color: $yellow;
+    margin-left: auto;
+  }
+}
+.dialog_body{
+  padding: 50px 95px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.input_cell{
+  color: $gray_1;
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  line-height: 19px;
+  margin-top: 30px;
+}
+.input_dialog{
+  padding: 5px 0 6px;
+  border-bottom: 1px solid $gray_4;
+  font-size: 14px;
+  line-height: 16px;
+  &:focus{
+    border-bottom: 1px solid $yellow;
+  }
+}
+.btn_dialog{
+  width: 90px;
+  height: 35px;
+  margin-top: 41px;
+  background: $yellow;
+  border-radius: 5px;
+  color: $dark;
+}

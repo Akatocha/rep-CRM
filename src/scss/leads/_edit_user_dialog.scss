@@ -1,0 +1,25 @@
+@import 'src/scss/rules/_add_country_setting.scss';
+.dialog_box{
+  width: 1024px;
+  margin-top: 105px;
+}
+.dialog_body{
+  padding: 83px 95px 90px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: start;
+  justify-content: space-between;
+}
+.input_container{
+  width: 220px;
+  margin-top: 35px;
+}
+.btn_box{
+  width: 100%;
+  align-self: flex-end;
+  // margin-left: auto;
+  
+}
+.btn_save{
+  margin-left: auto;
+}

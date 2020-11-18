@@ -1,0 +1,66 @@
+@import '../colorVar';
+.tab_main{
+  margin-left: auto;
+  width: 360px;
+  .tab{
+    background: $white;
+    padding-bottom: 20px;
+    position: relative;
+    width: 360px;
+    min-height: 50px;
+    box-shadow: 0px 2px 25px rgba(162, 162, 162, 0.25);
+    &::after{
+      bottom: 20px;
+      left: 0px;
+      content: '';
+      position: absolute;
+      height: 3px;
+      width: 361px;
+      background: rgb(255, 255, 255);
+    }
+
+    .btn_arrow{
+      position: absolute;
+      z-index: 1;
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background: $yellow;
+      bottom: -10px;
+      right: 10px;
+      img{
+        color: #FFFEE8;
+      }
+    }
+    .tab_name{
+      width: 100%;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: $yellow_light;
+    }
+    .tab_row{
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+      justify-content: space-between;
+      height: 50px;
+      border-bottom: 1px solid $gray_5;
+    }
+    .tab_row_second{
+      font-size: 12px;
+      line-height: 14px;
+      &:last-child{
+        border: none;
+      }
+    }
+  }
+}
+.contain_short{
+  height: 200px;
+  overflow: hidden;
+}
+.btn_arrow_reverse{
+  transform: rotate(180deg);
+}

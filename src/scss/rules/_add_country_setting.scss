@@ -1,0 +1,198 @@
+@import '../_colorVar.scss';
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.main_container {
+  z-index: 100;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background: #1010106e;
+  width: 100%;
+  height: 100%;
+}
+.dialog_box{
+  margin: auto;
+  margin-top: 300px;
+  // margin-top: 30px;
+  width: 520px;
+  min-height: 15px;
+  background: white;
+  box-shadow: 0px 4px 20px rgba(68, 68, 68, 0.5);
+  border-radius: 7px;
+}
+.dialog_header{
+  border-radius: 7px 7px 0 0;
+  width: 100%;
+  height: 63px;
+  display: flex;
+  align-items: center;
+  background: $yellow_light;
+  padding: 0 25px;
+  font-size: 20px;
+  line-height: 23px;
+  color: $yellow;
+  .v-icon{
+    color: $yellow;
+    margin-left: auto;
+  }
+}
+.dialog_body{
+  min-height: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0 40px;
+}
+.input_container{
+  margin-top: 10px;
+  position: relative;
+  width: 300px;
+  font-size: 16px;
+  line-height: 19px;
+  color: $gray_1;
+  .label{
+    margin-bottom: 5px;
+  }
+  .input{
+    outline: none;
+    border: 1px solid $gray_5;
+    min-height: 30px;
+    display: flex;
+    background: white;
+    .tag_area{
+      display: flex;
+      flex: 1 1;
+      flex-wrap: wrap;
+      padding: 0 0 5px 9px;
+      .tag{
+        height: 20px;
+        cursor: pointer;
+        font-size: 12px;
+        line-height: 14px;
+        display: flex;
+        align-items: center;
+        background: $yellow_light;
+        white-space: nowrap;
+        padding: 0 3px;
+        margin-left: 3px;
+        margin-top: 3px;
+        .v-icon{
+          margin-left: 6px;
+        }
+      }
+      .search{
+        // обязательно надо минимальную шырину добавить!!!
+        min-width: 40px;
+        align-self: center;
+        display: flex;
+        height: 18px;
+        font-size: 12px;
+        line-height: 14px;
+        flex: 1 1;
+        margin-left: 10px;
+        margin-top: 5px;
+        color: $gray_1;
+      }
+    }
+    .v-icon{
+      transition: 0.5s;
+      color: $yellow;
+      float: right;
+      margin-left: auto;
+      align-self: flex-start;
+      margin-top: 3px;
+    }
+  }
+  .drop_menu_box{
+    z-index: 2;
+    position: absolute;
+    max-height: 20vh;
+    overflow-y: scroll;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 7px rgba(68, 68, 68, 0.25);
+    border-radius: 0 0 7px 7px;
+    &::-webkit-scrollbar {
+      width: 4px;
+    }
+    &::-webkit-scrollbar-track {
+      background-color: $white;
+      border-radius: 10px;
+    }
+    &::-webkit-scrollbar-thumb {
+      min-height: 20px;  
+      border-radius: 10px;
+      background-color: $gray_4;	
+    }
+    .drop_row{
+      cursor: pointer;
+      height: 30px;
+      padding-left: 15px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      background: $white;
+      &:hover{
+        background: $gray_6;
+      }
+      .check_box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 18px;
+        width: 18px;
+        border: 1px solid $gray_3;
+        border-radius: 3px;
+        margin-right: 15px;
+        .v-icon{
+          color: $gray_3;
+        }
+      }
+      span{
+        font-size: 12px;
+        line-height: 14px;
+        color: $gray_1;
+      }
+      &.drop_row_active{
+        background: $yellow_light;
+        .check_box{
+          background: #FFEA9F;
+          border: 1px solid $gray_1;
+          .v-icon{
+            color: $gray_1;
+          }
+        }
+      }
+    }
+  }
+}
+.input_limit {
+  outline: none;
+  width: 100%;
+  padding-bottom: 3px;
+  border-bottom: 1px solid $gray_5;
+  font-size: 14px;
+  line-height: 16px;
+  &:focus {
+    border-bottom: 1px solid $yellow;
+  }
+}
+.btn_save{
+  color: $dark;
+  margin-top: 30px;
+  background: $yellow;
+  border-radius: 7px;
+  height: 35px;
+  width: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.reverse_icon{
+  transform: rotate(180deg);
+}

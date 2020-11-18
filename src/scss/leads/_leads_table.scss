@@ -1,0 +1,77 @@
+@import "../colorVar";
+$yellow: #fbc558;
+$yellow_light: #fffad1;
+.table_main_box {
+  margin-bottom: 60px;
+}
+.dialog-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: #1010107e;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 200;
+
+  .dialog-menu {
+    width: 1024px;
+    min-height: 30vh;
+    z-index: 300;
+    border-radius: 7px;
+    background: white;
+    position: relative;
+    overflow: hidden;
+
+    .dialog-title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 25px;
+      width: 100%;
+      background: $yellow_light;
+
+      span {
+        color: $yellow;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 23px;
+      }
+    }
+    .dialog-body {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      width: 100%;
+      padding: 90px 95px;
+
+      .dialog-cell {
+        margin-bottom: 30px;
+        width: 220px;
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid $gray_4;
+        .title {
+          margin-bottom: 5px;
+          font-size: 16px;
+          line-height: 19px;
+        }
+        .text {
+          font-size: 14px;
+          line-height: 16px;
+          margin-bottom: 6px;
+        }
+      }
+    }
+
+    h4 img {
+      height: 15px;
+      margin-left: 8px;
+    }
+  }
+}
+.error-mesage {
+  color: white;
+}

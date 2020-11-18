@@ -1,0 +1,130 @@
+@import "../colorVar";
+
+.main_box {
+  position: relative;
+  font-size: 16px;
+  line-height: 19px;
+  font-style: normal;
+  font-weight: normal;
+  color: $dark;
+  margin-top: 30px;
+  width: 1170px;
+  background: #ffffff;
+  box-shadow: 0px 2px 25px rgba(162, 162, 162, 0.25);
+  border-radius: 2px;
+  overflow: hidden;
+  padding-bottom: 12px;
+  margin: 0 auto 80px;
+}
+.btn_plus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: 34px;
+  width: 34px;
+  border-radius: 50%;
+  background: $yellow;
+}
+.title_box {
+  height: 59px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  span {
+    margin-right: 10px;
+  }
+  .span_box {
+    display: flex;
+    flex-direction: column;
+    .second {
+      color: $gray_4;
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+}
+.brocker_name {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+.categories_box {
+  background: $yellow_light;
+  height: 50px;
+  display: flex;
+  position: relative;
+  .btn_plus {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+  }
+}
+.categories_cell {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.first_cell {
+  width: 200px;
+  margin-right: 50px;
+  margin-left: 63px;
+  display: flex;
+  justify-content: flex-start;
+}
+.second_cell {
+  width: 124px;
+}
+.tab_row {
+  height: 50px;
+  display: flex;
+  font-size: 12px;
+  line-height: 14px;
+  color: $dark;
+  border-bottom: 1px solid $gray_5;
+  &:hover{
+    background: $gray_6;
+  }
+  span.land{
+    padding: 2px 0 0;
+  }
+  .flag {
+    height: 19px;
+    margin-right: 5px;
+  }
+  .v-icon{
+    cursor: pointer;
+    color: $red;
+  }
+}
+.table_body_box{
+position: relative;
+margin-bottom: 20px;
+// &::after{
+//   bottom: -1px;
+//   left: 0px;
+//   content: '';
+//   position: absolute;
+//   height: 3px;
+//   width: 100%;
+//   background: white;
+// }
+}
+.btn_arrow{
+  position: absolute;
+  z-index: 2;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: $yellow;
+  bottom: -23px;
+  right: 10px;
+  img{
+    color: #FFFEE8;
+  }
+}
+
+.btn_arrow_reverse{
+  transform: rotate(180deg);
+}

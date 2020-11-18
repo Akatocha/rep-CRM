@@ -1,0 +1,194 @@
+.alert-enter-active, .alert-leave-active {
+  transition: all .3s ease;
+}
+.alert-enter, .alert-leave-to{
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.quest_to_left{
+  animation: quest_slide_to_left 1.2s ease-in-out both;
+}
+.quest_to_right{
+  animation: quest_slide_to_right 1.2s ease-in-out both;
+}
+
+@keyframes quest_slide_to_left{
+  0%{
+    transform: translateX(0px);
+  }
+  40%{
+    width: 600px;
+  }
+  100%{
+    transform: translateX(-607px);
+  }
+}
+@keyframes quest_slide_to_right{
+  0%{
+    transform: translateX(-607px);
+  }
+  60%{
+    width: 600px;
+  }
+  100%{
+    transform: translateX(0px);
+  }
+}
+
+.login_to_right{
+  animation:login_to_right 0.8s ease-in-out both;
+}
+.login_to_left{
+  animation:login_to_left 0.8s ease-in-out both;
+}
+@keyframes login_to_right{
+  0%{
+    transform: translateX(0);
+    opacity: 1;
+  }
+  80%{
+    opacity: 1;
+  }
+  90%{
+    transform: translateX(300px);
+    opacity: 0;
+  }
+  100%{
+    z-index: -10;
+    opacity: 0;
+    transform: translateX(300px);
+    display: none;
+  }
+}
+@keyframes login_to_left{
+  0%{
+    opacity: 0;
+    transform: translateX(300px);
+    display: none;
+  }
+  10%{
+    transform: translateX(300px);
+    opacity: 0;
+  }
+  50%{
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0);
+    opacity: 1;
+    display: flex;
+  }
+}
+.reg_to_right{
+  animation:reg_to_right 0.8s ease-in-out both;
+}
+@keyframes reg_to_right{
+  0%{
+    z-index: -10;
+    opacity: 0;
+    transform: translateX(-300px);
+    display: none;
+  }
+  100%{
+    display: flex;
+    opacity: 1;
+    z-index: 6;
+  }
+}
+.reg_to_left{
+  animation:reg_to_left 1.2s ease-in-out both;
+}
+@keyframes reg_to_left{
+  0%{
+    display: flex;
+    opacity: 1;
+    z-index: 6;
+  }
+  100%{
+    z-index: -10;
+    transform: translateX(-350px);
+    display: none;
+  }
+}
+.btn-text-reg-enter-active, .btn-text-reg-leave-active {
+  transition: all  0.6s ease;
+}
+.btn-text-reg-enter{
+  transform: translateX(-40px);
+  opacity: 0;
+}
+.btn-text-reg-leave-to{
+  transform: translateX(40px);
+  opacity: 0;
+}
+.btn-text-login-enter-active, .btn-text-login-leave-active {
+  transition: all  0.6s ease;
+}
+.btn-text-login-enter{
+  transform: translateX(40px);
+  opacity: 0;
+}
+.btn-text-login-leave-to{
+  transform: translateX(-40px);
+  opacity: 0;
+}
+.text-reg-enter-active {
+  transition: all  0.6s ease;
+}
+.text-reg-leave-active{
+  transition: all  0.8s ease;
+}
+.text-reg-enter{
+  transform: translateX(-40px);
+  opacity: 0;
+}
+.text-reg-leave-to{
+  transform: translateX(70px);
+  opacity: 0;
+}
+.text-login-enter-active {
+  transition: all  0.6s ease;
+}
+.text-login-leave-active{
+  transition: all  0.8s ease;
+}
+.text-login-enter{
+  transform: translateX(40px);
+  opacity: 0;
+}
+.text-login-leave-to{
+  transform: translateX(-70px);
+  opacity: 0;
+}
+
+
+
+
+.opacity-logo-enter-active, .opacity-logo-leave-active {
+  transition: all .6s ease;
+}
+.opacity-logo-enter, .opacity-logo-leave-to{
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.opacity-btn-enter-active, .opacity-btn-leave-active {
+  transition: all .3s ease;
+}
+.opacity-btn-enter{
+  opacity: 0;
+  transform: translateX(-20px);
+}
+.opacity-btn-leave-to{
+  opacity: 0;
+  transform: translateX(20px);
+
+}
+
+.opacity-enter-active, .opacity-leave-active {
+  transition: all .3s ease;
+}
+.opacity-enter, .opacity-leave-to{
+  opacity: 0;
+}

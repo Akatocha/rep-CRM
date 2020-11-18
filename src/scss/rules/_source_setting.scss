@@ -1,0 +1,28 @@
+@import 'country_setting';
+
+.source_box{
+  display: flex;
+  flex-wrap: wrap;
+  color: $gray_1;
+  font-size: 12px;
+  line-height: 14px;
+  color: $dark;
+  .source{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    .text_second{
+      margin-left: 7px;
+    }
+  }
+  .country_box{
+    width: 809px;
+    margin-left: auto;
+  }
+  .broker_box{
+    width: 416px;
+    &::after{
+      transform: translateX(-754px);
+    }
+  }
+}

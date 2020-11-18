@@ -1,0 +1,137 @@
+
+*{
+  font-size: 16px;
+  line-height: 19px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  color: $dark;
+  cursor: default;
+}
+
+.time_picker_box{
+  width: 1170px;
+  height: 80px;
+  margin: auto;
+  margin-top: 30px;
+  background: $white;
+  box-shadow: 0px 2px 25px rgba(162, 162, 162, 0.25);
+  border-radius: 2px;
+  display: flex;
+  .time_logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding-left: 20px;
+
+    .second_text{
+      font-size: 14px;
+      line-height: 16px;
+      color: $gray_4;
+      font-weight: normal;
+
+    }
+  }
+    
+
+    .time_btn_box{
+      display: flex;
+      margin-left: auto;
+      height: 100%;
+      align-items: center;
+      display: flex;
+      
+        .tb_active::after{
+          bottom: 0;
+          position: absolute;
+          content: "";
+          width: 100%;
+          height: 2px;
+          background: linear-gradient(90deg, rgba(255, 228, 133, 0.9) 0%, rgba(255, 194, 72, 0.9) 51.04%, rgba(234, 151, 27, 0.9) 100%);
+        }
+    }
+    .time_castom_btn{
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 20px;
+      width: 150px;
+      height: 35px;
+      background: $yellow;
+      border-radius: 5px;
+      &:focus{
+        outline: none;
+      }
+    }
+  
+}
+
+//  Карточки
+
+.card_main{
+  width: 1170px;
+  height: 120px;
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-between;
+  .card_box{
+    display: flex;
+    width: 370px;
+    height: 120px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 25px rgba(162, 162, 162, 0.25);
+    border-radius: 2px;
+    .card_icon_box{
+      display: flex;
+      height: 100%;
+      width: 50%;
+      background: $yellow_light;
+      justify-content: center;
+      align-items: center;
+      .icon_circle{
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        background: $yellow;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    .card_text{
+      height: 100%;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      padding: 30px 0;
+      .ct_second{
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 28px;
+        color: $yellow;
+        span{
+          color: #E7C47F; 
+        }
+      }
+    }
+  }
+}
+.time_btn{
+  cursor: pointer;
+  width: 110px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  &:hover{
+    background: #FFFEE8;
+  }
+}
+.cursor_loading{
+  cursor: wait !important;
+}

@@ -1,0 +1,34 @@
+@import 'source_setting';
+
+.funnel_box{
+  display: flex;
+  flex-wrap: wrap;
+  color: $gray_1;
+  font-size: 12px;
+  line-height: 14px;
+  color: $dark;
+  .funnel{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    .text_second{
+      // overflow: hidden;
+      max-width: 210px;
+      color: $blue_2;
+      margin-left: 7px;
+    }
+  }
+  .source_box{
+    margin-left: auto;
+    width: 902px;
+    .country_box{
+      width: 628px;
+      .broker_box{
+        width: 325px;
+        &::after{
+          transform: translateX(-845px);
+        }
+      }
+    }
+  }
+}
